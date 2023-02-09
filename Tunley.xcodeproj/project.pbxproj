@@ -15,6 +15,7 @@
 		5233479D2995891B0077B052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5233479B2995891B0077B052 /* LaunchScreen.storyboard */; };
 		523347A529958BD30077B052 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523347A429958BD30077B052 /* Track.swift */; };
 		523347A7299595870077B052 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 523347A6299595870077B052 /* data.json */; };
+		523347A929959F850077B052 /* TrackCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523347A829959F850077B052 /* TrackCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5233479E2995891B0077B052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		523347A429958BD30077B052 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		523347A6299595870077B052 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		523347A829959F850077B052 /* TrackCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				523347902995891A0077B052 /* AppDelegate.swift */,
 				523347922995891A0077B052 /* SceneDelegate.swift */,
 				523347942995891A0077B052 /* ViewController.swift */,
+				523347A829959F850077B052 /* TrackCellTableViewCell.swift */,
 				523347A429958BD30077B052 /* Track.swift */,
 				523347962995891A0077B052 /* Main.storyboard */,
 				523347992995891B0077B052 /* Assets.xcassets */,
@@ -148,6 +151,7 @@
 				523347952995891A0077B052 /* ViewController.swift in Sources */,
 				523347912995891A0077B052 /* AppDelegate.swift in Sources */,
 				523347932995891A0077B052 /* SceneDelegate.swift in Sources */,
+				523347A929959F850077B052 /* TrackCellTableViewCell.swift in Sources */,
 				523347A529958BD30077B052 /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
