@@ -82,6 +82,9 @@
                             <constraint firstItem="ebu-7O-LaA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="svR-2y-1gz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tracksTableView" destination="ebu-7O-LaA" id="Cwk-0p-2S8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

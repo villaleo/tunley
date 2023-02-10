@@ -7,13 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource {
+    @IBOutlet weak var tracksTableView: UITableView!
     var tracks: [Track] = []
     
-    // TODO: Pt 1 - Add table view outlet
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        tracksTableView.dataSource = self
         tracks = Track.mockData
     }
 
@@ -21,5 +21,14 @@ class ViewController: UIViewController {
         // TODO: Pt 1 - Pass the selected track to the detail view controller
     }
     
-    // TODO: Pt 1 - Add table view data source methods
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tracks.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tracksTableView.dequeueReusableCell(withIdentifier: "TrackCell", for: indexPath)
+            as! TrackCellTableViewCell
+        cell.configure(with: tracks[indexPath.row])
+        return cell
+    }
 }
