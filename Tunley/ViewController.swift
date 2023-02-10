@@ -16,6 +16,13 @@ class ViewController: UIViewController, UITableViewDataSource {
         tracksTableView.dataSource = self
         tracks = Track.mockData
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let index = tracksTableView.indexPathForSelectedRow {
+            tracksTableView.deselectRow(at: index, animated: true)
+        }
+    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let cell = sender as? UITableViewCell,
