@@ -140,7 +140,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Track Genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oK5-l5-yQb">
-                                <rect key="frame" x="34" y="359" width="98" height="22"/>
+                                <rect key="frame" x="34" y="359" width="164" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
@@ -154,7 +154,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Track Release Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3KF-RS-nHP">
-                                <rect key="frame" x="34" y="424" width="154" height="22"/>
+                                <rect key="frame" x="34" y="424" width="174" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
@@ -168,7 +168,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Track Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ri2-2O-woR">
-                                <rect key="frame" x="37" y="489" width="118" height="22"/>
+                                <rect key="frame" x="37" y="489" width="192" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
@@ -179,6 +179,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="dOt-O3-cn2"/>
+                    <connections>
+                        <outlet property="albumLabel" destination="bdU-5l-sGg" id="ANF-xe-TIM"/>
+                        <outlet property="artistLabel" destination="tbe-VZ-6c0" id="gh6-Qc-rxh"/>
+                        <outlet property="artworkIView" destination="f1k-E1-fUs" id="AIQ-Uf-4If"/>
+                        <outlet property="durationLabel" destination="ri2-2O-woR" id="xF2-aq-PNP"/>
+                        <outlet property="genreLabel" destination="oK5-l5-yQb" id="yFO-sL-0Sl"/>
+                        <outlet property="releaseDateLabel" destination="3KF-RS-nHP" id="ioh-Hz-obJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s6g-Yw-byd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
