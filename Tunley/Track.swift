@@ -51,6 +51,28 @@ extension Track {
             genre: "Urbano latino",
             releaseDate: try! Date("2018-12-24T12:00:00Z", strategy: .iso8601),
             durationMillis: 300579
+        ),
+        .init(
+            name: "DÁKITI",
+            artist: "Bad Bunny & Jhayco",
+            artwork: .init(
+                string: "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/64/70/1c/64701cff-71ed-912f-ce62-71d409f5e6ad/195497640560.jpg/100x100bb.jpg"
+            )!,
+            album: "EL ÚLTIMO TOUR DEL MUNDO",
+            genre: "Urbano latino",
+            releaseDate: try! Date("2020-10-30T07:00:00Z", strategy: .iso8601),
+            durationMillis: 205090
+        ),
+        .init(
+            name: "Yo Perreo Sola",
+            artist: "Bad Bunny",
+            artwork: .init(
+                string: "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/8c/0f/81/8c0f81f2-9f10-5e3d-b9de-5961a73e8e52/195081078724.jpg/100x100bb.jpg"
+            )!,
+            album: "YHLQMDLG",
+            genre: "Urban latino",
+            releaseDate: try! Date("2020-02-29T12:00:00Z", strategy: .iso8601),
+            durationMillis: 172127
         )
     ]
 }
