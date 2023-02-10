@@ -11,6 +11,19 @@ class ViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var tracksTableView: UITableView!
     var tracks: [Track] = []
     
+    // MARK: Impl UITableViewDataSource
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tracks.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tracksTableView.dequeueReusableCell(withIdentifier: "TrackCell", for: indexPath)
+            as! TrackCellTableViewCell
+        cell.configure(with: tracks[indexPath.row])
+        return cell
+    }
+    
+    // MARK: Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
         tracksTableView.dataSource = self
@@ -32,16 +45,5 @@ class ViewController: UIViewController, UITableViewDataSource {
             let track = tracks[index.row]
             details.track = track
         }
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tracks.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tracksTableView.dequeueReusableCell(withIdentifier: "TrackCell", for: indexPath)
-            as! TrackCellTableViewCell
-        cell.configure(with: tracks[indexPath.row])
-        return cell
     }
 }

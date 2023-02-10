@@ -18,6 +18,7 @@ struct Track {
 }
 
 extension Track {
+    // MARK: Mock Data
     static var mockData: [Track] = [
         .init(
             name: "Tití Me Preguntó",
@@ -77,6 +78,7 @@ extension Track {
     ]
 }
 
+// MARK: Helpers
 /// Converts milliseconds to mm:ss format
 ///  ex:  208643 -> "3:28"
 func formattedTrackDuration(with ms: Int) -> String {

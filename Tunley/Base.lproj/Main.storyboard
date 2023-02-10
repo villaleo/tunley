@@ -65,9 +65,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="trackArtist" destination="pxU-hF-Wmm" id="soS-hZ-kFN"/>
-                                            <outlet property="trackArtwork" destination="0QU-QL-BLQ" id="ex6-PG-Dav"/>
-                                            <outlet property="trackName" destination="HRa-lW-aAj" id="3Ws-2K-D3c"/>
+                                            <outlet property="artistLabel" destination="pxU-hF-Wmm" id="soS-hZ-kFN"/>
+                                            <outlet property="artworkIView" destination="0QU-QL-BLQ" id="ex6-PG-Dav"/>
+                                            <outlet property="nameLabel" destination="HRa-lW-aAj" id="3Ws-2K-D3c"/>
                                             <segue destination="3cG-2M-fnY" kind="show" id="S5v-jS-bfW"/>
                                         </connections>
                                     </tableViewCell>
