@@ -16,6 +16,7 @@
 		523347A529958BD30077B052 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523347A429958BD30077B052 /* Track.swift */; };
 		523347A7299595870077B052 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 523347A6299595870077B052 /* data.json */; };
 		523347A929959F850077B052 /* TrackCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523347A829959F850077B052 /* TrackCellTableViewCell.swift */; };
+		527AD0A12995C4AB00589886 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 527AD0A02995C4AB00589886 /* Nuke */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				527AD0A12995C4AB00589886 /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +94,9 @@
 			dependencies = (
 			);
 			name = Tunley;
+			packageProductDependencies = (
+				527AD0A02995C4AB00589886 /* Nuke */,
+			);
 			productName = Tunley;
 			productReference = 5233478D2995891A0077B052 /* Tunley.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 523347842995891A0077B052;
+			packageReferences = (
+				527AD09F2995C4AB00589886 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = 5233478E2995891A0077B052 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -370,6 +378,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		527AD09F2995C4AB00589886 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		527AD0A02995C4AB00589886 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 527AD09F2995C4AB00589886 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 523347852995891A0077B052 /* Project object */;
 }

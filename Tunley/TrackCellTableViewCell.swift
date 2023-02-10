@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Nuke
 
 class TrackCellTableViewCell: UITableViewCell {
     @IBOutlet weak var trackName: UILabel!
@@ -17,7 +18,11 @@ class TrackCellTableViewCell: UITableViewCell {
         // Initialization code
     }
     
-    // TODO: Configure the cell UI when a Track model is passed in
+    func configure(with track: Track) {
+        trackName.text = track.name
+        trackArtist.text = track.artist
+        Nuke.loadImage(with: track.artwork, into: trackArtwork)
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
