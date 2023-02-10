@@ -18,7 +18,13 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // TODO: Pt 1 - Pass the selected track to the detail view controller
+        if let cell = sender as? UITableViewCell,
+            let index = tracksTableView.indexPath(for: cell),
+            let details = segue.destination as? TrackDetailsViewController
+        {
+            let track = tracks[index.row]
+            details.track = track
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

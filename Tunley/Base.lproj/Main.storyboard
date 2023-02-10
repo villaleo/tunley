@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tE1-Lm-nVn">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tracks-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tunley" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ebu-7O-LaA">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrackCell" rowHeight="156" id="3yH-RN-WXN" customClass="TrackCellTableViewCell" customModule="Tunley" customModuleProvider="target">
@@ -68,6 +68,7 @@
                                             <outlet property="trackArtist" destination="pxU-hF-Wmm" id="soS-hZ-kFN"/>
                                             <outlet property="trackArtwork" destination="0QU-QL-BLQ" id="ex6-PG-Dav"/>
                                             <outlet property="trackName" destination="HRa-lW-aAj" id="3Ws-2K-D3c"/>
+                                            <segue destination="3cG-2M-fnY" kind="show" id="S5v-jS-bfW"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -82,11 +83,46 @@
                             <constraint firstItem="ebu-7O-LaA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="svR-2y-1gz"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Tracks" id="5RX-BD-D3x"/>
                     <connections>
                         <outlet property="tracksTableView" destination="ebu-7O-LaA" id="Cwk-0p-2S8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061.8320610687022" y="3.5211267605633805"/>
+        </scene>
+        <!--Track Details View Controller-->
+        <scene sceneID="la2-Lb-qkj">
+            <objects>
+                <viewController id="3cG-2M-fnY" customClass="TrackDetailsViewController" customModule="Tunley" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jhB-DG-uEg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="wGZ-vH-Hau"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dOt-O3-cn2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6g-Yw-byd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2015" y="4"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tBG-H5-AYN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tE1-Lm-nVn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aYc-Vh-AAd">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MC1-cz-WtA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UbC-ht-zgH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
         </scene>
